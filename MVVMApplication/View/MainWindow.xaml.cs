@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using MVVMApplication.ViewModal;
+using System.Windows;
 
 namespace MVVMApplication {
   /// <summary>
@@ -7,6 +8,8 @@ namespace MVVMApplication {
   public partial class MainWindow : Window {
     public MainWindow() {
       InitializeComponent();
+
+      DataContext = new ApplicationViewModel();
     }
   }
 }
